@@ -1,0 +1,1106 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1/"
+     xml:base="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:wounds-q1="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#affectsTissue -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#affectsTissue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tissue"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#causedByAgent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#causedByAgent">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ExternalAgent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#followsStage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#followsStage">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#precedesStage"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#HealingProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#HealingProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasCause -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasCause">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Cause"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasClassification -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasClassification">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalClassification"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasComplication -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasComplication">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Complication"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasRiskLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasRiskLevel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Risk_Factor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasSeverityLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasSeverityLevel">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Severity"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasSymptom -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasSymptom">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Symptom"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#occursAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#occursAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#BodyLocation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#precedesStage -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#precedesStage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#HealingProcess"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#HealingProcess"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#requiresFirstAid -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#requiresFirstAid">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#FirstAid"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#treatedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#treatedBy">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#treatsWound"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Treatment"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#treatsWound -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#treatsWound">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Treatment"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasBleedingAmount -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasBleedingAmount">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasBleedingLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasBleedingLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasDepth -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasDepth">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasHealingTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasHealingTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasLength -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasLength">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasLocationDescription -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasLocationDescription">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasPainLevel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasPainLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasRiskScore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasRiskScore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasTemperature -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasTemperature">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Infection"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Abrasion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Abrasion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#OpenWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Antibiotics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Antibiotics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ApplyingPressure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ApplyingPressure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#FirstAid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Arm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Arm">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#BodyLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Avulsion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Avulsion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#OpenWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Bandaging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Bandaging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#FirstAid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Bleeding -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Bleeding">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#BloodVessel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#BloodVessel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tissue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#BluntForce -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#BluntForce">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#BodyLocation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#BodyLocation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Bone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Bone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tissue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Bullet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Bullet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Cause -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Cause"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Cellulitis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Cellulitis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Complication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ChronicWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ChronicWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClassI -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClassI">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClassII -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClassII">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClassIII -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClassIII">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClassIV -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClassIV">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalClassification"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Cleaning -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Cleaning">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#FirstAid"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClosedWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClosedWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#OpenWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Complication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Complication"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Contusion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Contusion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClosedWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Critical -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Critical">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Severity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#CrushWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#CrushWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#OpenWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#CrushingInjury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#CrushingInjury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClosedWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Debridement -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Debridement">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#DrainSiteWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#DrainSiteWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Epithelialization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Epithelialization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#HealingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ExternalAgent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ExternalAgent"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Fall -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Fall">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Fever -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Fever">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#FirstAid -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#FirstAid">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#GasGangrene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#GasGangrene">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Infection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#GunshotWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#GunshotWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#OpenWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Head -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Head">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#BodyLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#HealingProcess -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#HealingProcess"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Hematoma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Hematoma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClosedWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Hemorrhage -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Hemorrhage">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Complication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Hemostasis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Hemostasis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#HealingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#HighRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#HighRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Risk_Factor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Incision -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Incision">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#OpenWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#IncisionWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#IncisionWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Infection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Infection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Complication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Inflammation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Inflammation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#HealingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Irrigation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Irrigation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Joint -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Joint">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tissue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Laceration -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Laceration">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#OpenWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Leg -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Leg">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#BodyLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#LowRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#LowRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Risk_Factor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#MediumRisk -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#MediumRisk">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Risk_Factor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Mild -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Mild">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Severity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Moderate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Moderate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Severity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Muscle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Muscle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tissue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Nail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Nail">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#NecrotizingFasciitis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#NecrotizingFasciitis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Complication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Nerve -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Nerve">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tissue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#OpenWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#OpenWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasComplication"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Infection"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Organ -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Organ">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tissue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Packing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Packing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Pain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Pain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#PainMedication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#PainMedication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Proliferation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Proliferation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#HealingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#PunctureWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#PunctureWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#OpenWound"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#affectsTissue"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tissue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Pus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Pus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Redness -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Redness">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Remodeling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Remodeling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#HealingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Risk_Factor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Risk_Factor"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ScarFormation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ScarFormation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#HealingProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Scarring -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Scarring">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Complication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Severe -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Severe">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Severity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Severity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Severity"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SharpObject -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SharpObject">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ShockSymptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ShockSymptom">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Skin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Skin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tissue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SprainRelatedWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SprainRelatedWound">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClosedWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#StaphylococcalInfection -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#StaphylococcalInfection">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Infection"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SubcutaneousFat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SubcutaneousFat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tissue"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Surgery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Surgery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalClassification -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalClassification"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalProcedure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalProcedure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Cause"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalWound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalWound">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalWound"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#hasClassification"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalClassification"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Suturing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Suturing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Swelling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Swelling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Symptom"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Symptom -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Symptom"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tetanus -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tetanus">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Complication"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#TetanusShot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#TetanusShot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Treatment"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tissue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tissue"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Torso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Torso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#BodyLocation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Treatment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Treatment"/>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#WhiplashRelatedInjury -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#WhiplashRelatedInjury">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClosedWound"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Wound"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClassII_Inst -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClassII_Inst">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClassII"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Lac1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Lac1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Laceration"/>
+        <wounds-q1:affectsTissue rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Skin1"/>
+        <wounds-q1:hasCause rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SharpObj1"/>
+        <wounds-q1:treatedBy rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Suturing1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Muscle1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Muscle1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Muscle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Nail1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Nail1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ExternalAgent"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Punc1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Punc1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#PunctureWound"/>
+        <wounds-q1:affectsTissue rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Muscle1"/>
+        <wounds-q1:hasCause rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Nail1"/>
+        <wounds-q1:hasComplication rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tetanus1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SharpObj1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SharpObj1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Cause"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Skin1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Skin1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Skin"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Surg1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Surg1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#SurgicalWound"/>
+        <wounds-q1:hasClassification rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#ClassII_Inst"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Suturing1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Suturing1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Suturing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Suturing2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Suturing2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Suturing"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tetanus1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tetanus1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1#Tetanus"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+

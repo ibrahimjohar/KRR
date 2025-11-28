@@ -1,0 +1,1030 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1">
+    <Prefix name="" IRI="http://www.semanticweb.org/ibrah/ontologies/2025/10/wounds-q1/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Abrasion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Antibiotics"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ApplyingPressure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Arm"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Avulsion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bandaging"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bleeding"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BloodVessel"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BluntForce"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#BodyLocation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bone"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Bullet"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cause"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cellulitis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ChronicWound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClassI"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClassII"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClassIII"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClassIV"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cleaning"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ClosedWound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Complication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Contusion"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Critical"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrushWound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CrushingInjury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Debridement"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#DrainSiteWound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Epithelialization"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ExternalAgent"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fall"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Fever"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FirstAid"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GasGangrene"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#GunshotWound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Head"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HealingProcess"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hematoma"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hemorrhage"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Hemostasis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HighRisk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Incision"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#IncisionWound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Infection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Inflammation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Irrigation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Joint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Laceration"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Leg"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#LowRisk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MediumRisk"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mild"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Moderate"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Muscle"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nail"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#NecrotizingFasciitis"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Nerve"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#OpenWound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Organ"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Packing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pain"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PainMedication"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Proliferation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PunctureWound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Pus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Redness"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Remodeling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Risk_Factor"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ScarFormation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Scarring"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severe"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Severity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SharpObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#ShockSymptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Skin"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SprainRelatedWound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#StaphylococcalInfection"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SubcutaneousFat"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Surgery"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurgicalClassification"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurgicalProcedure"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurgicalWound"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Suturing"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Swelling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Symptom"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tetanus"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TetanusShot"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Tissue"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Torso"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Treatment"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WhiplashRelatedInjury"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Wound"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#affectsTissue"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#causedByAgent"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#followsStage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCause"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasClassification"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasComplication"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRiskLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSeverityLevel"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSymptom"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#occursAt"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#precedesStage"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#requiresFirstAid"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treatedBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#treatsWound"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBleedingAmount"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasBleedingLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasDepth"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasHealingTime"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLength"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasLocationDescription"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasPainLevel"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasRiskScore"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty IRI="#hasTemperature"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#ClassII_Inst"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Lac1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Muscle1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nail1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Punc1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#SharpObj1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Skin1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Surg1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Suturing1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Suturing2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Tetanus1"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="#SurgicalWound"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#SurgicalWound"/>
+            <ObjectExactCardinality cardinality="1">
+                <ObjectProperty IRI="#hasClassification"/>
+                <Class IRI="#SurgicalClassification"/>
+            </ObjectExactCardinality>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="#Abrasion"/>
+        <Class IRI="#OpenWound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Antibiotics"/>
+        <Class IRI="#Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ApplyingPressure"/>
+        <Class IRI="#FirstAid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Arm"/>
+        <Class IRI="#BodyLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Avulsion"/>
+        <Class IRI="#OpenWound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bandaging"/>
+        <Class IRI="#FirstAid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bleeding"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BloodVessel"/>
+        <Class IRI="#Tissue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#BluntForce"/>
+        <Class IRI="#Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bone"/>
+        <Class IRI="#Tissue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Bullet"/>
+        <Class IRI="#Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cellulitis"/>
+        <Class IRI="#Complication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ChronicWound"/>
+        <Class IRI="#Wound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassI"/>
+        <Class IRI="#SurgicalClassification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassII"/>
+        <Class IRI="#SurgicalClassification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassIII"/>
+        <Class IRI="#SurgicalClassification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClassIV"/>
+        <Class IRI="#SurgicalClassification"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cleaning"/>
+        <Class IRI="#FirstAid"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ClosedWound"/>
+        <Class IRI="#Wound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Contusion"/>
+        <Class IRI="#ClosedWound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Critical"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrushWound"/>
+        <Class IRI="#OpenWound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CrushingInjury"/>
+        <Class IRI="#ClosedWound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Debridement"/>
+        <Class IRI="#Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#DrainSiteWound"/>
+        <Class IRI="#SurgicalWound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Epithelialization"/>
+        <Class IRI="#HealingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fall"/>
+        <Class IRI="#Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Fever"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FirstAid"/>
+        <Class IRI="#Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GasGangrene"/>
+        <Class IRI="#Infection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#GunshotWound"/>
+        <Class IRI="#OpenWound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Head"/>
+        <Class IRI="#BodyLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hematoma"/>
+        <Class IRI="#ClosedWound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hemorrhage"/>
+        <Class IRI="#Complication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Hemostasis"/>
+        <Class IRI="#HealingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HighRisk"/>
+        <Class IRI="#Risk_Factor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Incision"/>
+        <Class IRI="#OpenWound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#IncisionWound"/>
+        <Class IRI="#SurgicalWound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Infection"/>
+        <Class IRI="#Complication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Inflammation"/>
+        <Class IRI="#HealingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Irrigation"/>
+        <Class IRI="#Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Joint"/>
+        <Class IRI="#Tissue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Laceration"/>
+        <Class IRI="#OpenWound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Leg"/>
+        <Class IRI="#BodyLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#LowRisk"/>
+        <Class IRI="#Risk_Factor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MediumRisk"/>
+        <Class IRI="#Risk_Factor"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mild"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Moderate"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Muscle"/>
+        <Class IRI="#Tissue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nail"/>
+        <Class IRI="#Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#NecrotizingFasciitis"/>
+        <Class IRI="#Complication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Nerve"/>
+        <Class IRI="#Tissue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenWound"/>
+        <Class IRI="#Wound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#OpenWound"/>
+        <ObjectSomeValuesFrom>
+            <ObjectProperty IRI="#hasComplication"/>
+            <Class IRI="#Infection"/>
+        </ObjectSomeValuesFrom>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Organ"/>
+        <Class IRI="#Tissue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Packing"/>
+        <Class IRI="#Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pain"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PainMedication"/>
+        <Class IRI="#Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Proliferation"/>
+        <Class IRI="#HealingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PunctureWound"/>
+        <Class IRI="#OpenWound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PunctureWound"/>
+        <ObjectMinCardinality cardinality="1">
+            <ObjectProperty IRI="#affectsTissue"/>
+            <Class IRI="#Tissue"/>
+        </ObjectMinCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Pus"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Redness"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Remodeling"/>
+        <Class IRI="#HealingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ScarFormation"/>
+        <Class IRI="#HealingProcess"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Scarring"/>
+        <Class IRI="#Complication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Severe"/>
+        <Class IRI="#Severity"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SharpObject"/>
+        <Class IRI="#Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#ShockSymptom"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Skin"/>
+        <Class IRI="#Tissue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SprainRelatedWound"/>
+        <Class IRI="#ClosedWound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#StaphylococcalInfection"/>
+        <Class IRI="#Infection"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SubcutaneousFat"/>
+        <Class IRI="#Tissue"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Surgery"/>
+        <Class IRI="#Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurgicalProcedure"/>
+        <Class IRI="#Cause"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurgicalWound"/>
+        <Class IRI="#Wound"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Suturing"/>
+        <Class IRI="#Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Swelling"/>
+        <Class IRI="#Symptom"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Tetanus"/>
+        <Class IRI="#Complication"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TetanusShot"/>
+        <Class IRI="#Treatment"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Torso"/>
+        <Class IRI="#BodyLocation"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#WhiplashRelatedInjury"/>
+        <Class IRI="#ClosedWound"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#ClosedWound"/>
+        <Class IRI="#OpenWound"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#OpenWound"/>
+        <Class IRI="#SurgicalWound"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#ClassII"/>
+        <NamedIndividual IRI="#ClassII_Inst"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Laceration"/>
+        <NamedIndividual IRI="#Lac1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Muscle"/>
+        <NamedIndividual IRI="#Muscle1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ExternalAgent"/>
+        <NamedIndividual IRI="#Nail1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#PunctureWound"/>
+        <NamedIndividual IRI="#Punc1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cause"/>
+        <NamedIndividual IRI="#SharpObj1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Skin"/>
+        <NamedIndividual IRI="#Skin1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurgicalWound"/>
+        <NamedIndividual IRI="#Surg1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Suturing"/>
+        <NamedIndividual IRI="#Suturing1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Suturing"/>
+        <NamedIndividual IRI="#Suturing2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Tetanus"/>
+        <NamedIndividual IRI="#Tetanus1"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectsTissue"/>
+        <NamedIndividual IRI="#Lac1"/>
+        <NamedIndividual IRI="#Skin1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCause"/>
+        <NamedIndividual IRI="#Lac1"/>
+        <NamedIndividual IRI="#SharpObj1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#treatedBy"/>
+        <NamedIndividual IRI="#Lac1"/>
+        <NamedIndividual IRI="#Suturing1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#affectsTissue"/>
+        <NamedIndividual IRI="#Punc1"/>
+        <NamedIndividual IRI="#Muscle1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasCause"/>
+        <NamedIndividual IRI="#Punc1"/>
+        <NamedIndividual IRI="#Nail1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasComplication"/>
+        <NamedIndividual IRI="#Punc1"/>
+        <NamedIndividual IRI="#Tetanus1"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasClassification"/>
+        <NamedIndividual IRI="#Surg1"/>
+        <NamedIndividual IRI="#ClassII_Inst"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#followsStage"/>
+        <ObjectProperty IRI="#precedesStage"/>
+    </InverseObjectProperties>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#treatedBy"/>
+        <ObjectProperty IRI="#treatsWound"/>
+    </InverseObjectProperties>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasRiskLevel"/>
+    </FunctionalObjectProperty>
+    <FunctionalObjectProperty>
+        <ObjectProperty IRI="#hasSeverityLevel"/>
+    </FunctionalObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty IRI="#followsStage"/>
+    </TransitiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#affectsTissue"/>
+        <Class IRI="#Wound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#causedByAgent"/>
+        <Class IRI="#Wound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#followsStage"/>
+        <Class IRI="#HealingProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCause"/>
+        <Class IRI="#Wound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasClassification"/>
+        <Class IRI="#Wound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasComplication"/>
+        <Class IRI="#Wound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRiskLevel"/>
+        <Class IRI="#Wound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSeverityLevel"/>
+        <Class IRI="#Wound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#Wound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#occursAt"/>
+        <Class IRI="#Wound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#precedesStage"/>
+        <Class IRI="#HealingProcess"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#requiresFirstAid"/>
+        <Class IRI="#Wound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#treatedBy"/>
+        <Class IRI="#Wound"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#treatsWound"/>
+        <Class IRI="#Treatment"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#affectsTissue"/>
+        <Class IRI="#Tissue"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#causedByAgent"/>
+        <Class IRI="#ExternalAgent"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#followsStage"/>
+        <Class IRI="#HealingProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCause"/>
+        <Class IRI="#Cause"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasClassification"/>
+        <Class IRI="#SurgicalClassification"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasComplication"/>
+        <Class IRI="#Complication"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRiskLevel"/>
+        <Class IRI="#Risk_Factor"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSeverityLevel"/>
+        <Class IRI="#Severity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSymptom"/>
+        <Class IRI="#Symptom"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#occursAt"/>
+        <Class IRI="#BodyLocation"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#precedesStage"/>
+        <Class IRI="#HealingProcess"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#requiresFirstAid"/>
+        <Class IRI="#FirstAid"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#treatedBy"/>
+        <Class IRI="#Treatment"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#treatsWound"/>
+        <Class IRI="#Wound"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBleedingAmount"/>
+        <Class IRI="#Wound"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasBleedingLevel"/>
+        <Class IRI="#Wound"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasDepth"/>
+        <Class IRI="#Wound"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasHealingTime"/>
+        <Class IRI="#Wound"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLength"/>
+        <Class IRI="#Wound"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasLocationDescription"/>
+        <Class IRI="#Wound"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasPainLevel"/>
+        <Class IRI="#Wound"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasRiskScore"/>
+        <Class IRI="#Wound"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty IRI="#hasTemperature"/>
+        <Class IRI="#Infection"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBleedingAmount"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasBleedingLevel"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasDepth"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasHealingTime"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLength"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasLocationDescription"/>
+        <Datatype abbreviatedIRI="xsd:string"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasPainLevel"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasRiskScore"/>
+        <Datatype abbreviatedIRI="xsd:int"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty IRI="#hasTemperature"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
