@@ -1,1 +1,1 @@
-# KRR
+# Knowledge Representation & Reasoning
