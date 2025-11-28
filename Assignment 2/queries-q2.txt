@@ -1,1 +1,58 @@
+#ibrahim johar farooqi
+#23K-0074
+#BAI-5A
+#krr - assignment 2 - question 2
 
+PREFIX : <http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+#query 1
+#competency question1: which mayors are members of which political party?
+
+SELECT ?mayor ?party
+WHERE {
+  ?mayor a :Mayor ;
+         :memberOfParty ?party .
+}
+
+#query 2
+#competency question2: which mayor(s) had an annual budget greater than $60 billion?
+
+SELECT ?mayor ?budget
+WHERE {
+  ?mayor a :Mayor ;
+         :annualBudgetUSD ?budget .
+  FILTER (?budget > 60000000000)
+}
+
+#query 3
+#competency question3: retrieve each mayor with their approval rating (if available).
+
+SELECT ?mayor ?approval
+WHERE {
+  ?mayor a :Mayor .
+  OPTIONAL { ?mayor :approvalRating ?approval . }
+}
+
+#query 4
+#competency question4: how many crises did each mayor handle?
+
+SELECT ?mayor (COUNT(?crisis) AS ?crisisCount)
+WHERE {
+  ?mayor a :Mayor ;
+         :handledCrisis ?crisis .
+}
+GROUP BY ?mayor
+
+#query 5 - graph traversal
+#competency question5: who is the successor of the successor of the successor of rudy giuliani?
+
+SELECT ?nextHop
+WHERE {
+  :Rudy_Giuliani :successor ?s1 .
+  ?s1 :successor ?s2 .
+  ?s2 :successor ?nextHop .
+}
