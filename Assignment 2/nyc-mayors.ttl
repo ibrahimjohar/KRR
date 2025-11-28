@@ -1,0 +1,331 @@
+@prefix : <http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors/> .
+
+<http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors> rdf:type owl:Ontology .
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#handledCrisis
+:handledCrisis rdf:type owl:ObjectProperty ;
+               rdfs:domain :Mayor ;
+               rdfs:range :Crisis .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#hasInitiative
+:hasInitiative rdf:type owl:ObjectProperty ;
+               rdfs:domain :Mayor ;
+               rdfs:range :Initiative .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#hasTerm
+:hasTerm rdf:type owl:ObjectProperty ;
+         rdfs:domain :Mayor ;
+         rdfs:range :Term .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#heldOffice
+:heldOffice rdf:type owl:ObjectProperty ;
+            rdfs:domain :Mayor ;
+            rdfs:range :City .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#memberOfParty
+:memberOfParty rdf:type owl:ObjectProperty ,
+                        owl:FunctionalProperty ;
+               rdfs:domain :Person ;
+               rdfs:range :PoliticalParty .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#predecessor
+:predecessor rdf:type owl:ObjectProperty ;
+             owl:inverseOf :successor ;
+             rdfs:domain :Person ;
+             rdfs:range :Person .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#residesIn
+:residesIn rdf:type owl:ObjectProperty ;
+           rdfs:domain :Person ;
+           rdfs:range :Borough .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#successor
+:successor rdf:type owl:ObjectProperty ;
+           rdfs:domain :Person ;
+           rdfs:range :Person .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#termOfCity
+:termOfCity rdf:type owl:ObjectProperty ;
+            rdfs:domain :Term ;
+            rdfs:range :City .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#annualBudgetUSD
+:annualBudgetUSD rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Mayor ;
+                 rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#approvalRating
+:approvalRating rdf:type owl:DatatypeProperty ;
+                rdfs:domain :Mayor ;
+                rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#birthDate
+:birthDate rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Person ;
+           rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#termCount
+:termCount rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Mayor ;
+           rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#termEnd
+:termEnd rdf:type owl:DatatypeProperty ;
+         rdfs:domain :Term ;
+         rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#termStart
+:termStart rdf:type owl:DatatypeProperty ;
+           rdfs:subPropertyOf owl:topDataProperty ;
+           rdfs:domain :Term ;
+           rdfs:range xsd:dateTime .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Borough
+:Borough rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#City
+:City rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Crisis
+:Crisis rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Initiative
+:Initiative rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Mayor
+:Mayor rdf:type owl:Class ;
+       rdfs:subClassOf :Person .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Person
+:Person rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#PoliticalParty
+:PoliticalParty rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Term
+:Term rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Bill_de_Blasio
+:Bill_de_Blasio rdf:type owl:NamedIndividual ,
+                         :Mayor ;
+                :handledCrisis :CovidPandemic ;
+                :hasInitiative :UniversalPreK ;
+                :hasTerm :Term_DeBlasio_2014_2021 ;
+                :heldOffice :New_York_City ;
+                :memberOfParty :Democratic ;
+                :predecessor :Michael_Bloomberg ;
+                :residesIn :Brooklyn ;
+                :successor :Eric_Adams ;
+                :annualBudgetUSD 89160000000 ;
+                :birthDate "1961-05-08T00:00:00"^^xsd:dateTime ;
+                :termCount "2"^^xsd:int .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Bronx
+:Bronx rdf:type owl:NamedIndividual ,
+                :Borough .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Brooklyn
+:Brooklyn rdf:type owl:NamedIndividual ,
+                   :Borough .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#CovidPandemic
+:CovidPandemic rdf:type owl:NamedIndividual ,
+                        :Crisis .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#CrimeReduction
+:CrimeReduction rdf:type owl:NamedIndividual ,
+                         :Initiative .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Democratic
+:Democratic rdf:type owl:NamedIndividual ,
+                     :PoliticalParty .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Eric_Adams
+:Eric_Adams rdf:type owl:NamedIndividual ,
+                     :Mayor ;
+            :handledCrisis :MigrantCrisis ;
+            :hasInitiative :SubwaySafety ;
+            :hasTerm :Term_Adams_2022_2025 ;
+            :heldOffice :New_York_City ;
+            :memberOfParty :Democratic ;
+            :predecessor :Bill_de_Blasio ;
+            :residesIn :Brooklyn ;
+            :annualBudgetUSD 101700000000 ;
+            :birthDate "1960-09-01T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#HurricaneSandy
+:HurricaneSandy rdf:type owl:NamedIndividual ,
+                         :Crisis .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Independent
+:Independent rdf:type owl:NamedIndividual ,
+                      :PoliticalParty .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Manhattan
+:Manhattan rdf:type owl:NamedIndividual ,
+                    :Borough .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Michael_Bloomberg
+:Michael_Bloomberg rdf:type owl:NamedIndividual ,
+                            :Mayor ;
+                   :handledCrisis :HurricaneSandy ;
+                   :hasInitiative :PublicHealth ;
+                   :hasTerm :Term_Bloomberg_2002_2013 ;
+                   :heldOffice :New_York_City ;
+                   :memberOfParty :Independent ;
+                   :predecessor :Rudy_Giuliani ;
+                   :residesIn :Manhattan ;
+                   :successor :Bill_de_Blasio ;
+                   :annualBudgetUSD 63100000000 ;
+                   :birthDate "1942-02-14T00:00:00"^^xsd:dateTime ;
+                   :termCount "3"^^xsd:int .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#MigrantCrisis
+:MigrantCrisis rdf:type owl:NamedIndividual ,
+                        :Crisis .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#New_York_City
+:New_York_City rdf:type owl:NamedIndividual ,
+                        :City .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#NineEleven
+:NineEleven rdf:type owl:NamedIndividual ,
+                     :Crisis .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#PublicHealth
+:PublicHealth rdf:type owl:NamedIndividual ,
+                       :Initiative .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Queens
+:Queens rdf:type owl:NamedIndividual ,
+                 :Borough .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Republican
+:Republican rdf:type owl:NamedIndividual ,
+                     :PoliticalParty .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Rudy_Giuliani
+:Rudy_Giuliani rdf:type owl:NamedIndividual ,
+                        :Mayor ;
+               :handledCrisis :NineEleven ;
+               :hasInitiative :CrimeReduction ;
+               :hasTerm :Term_Giuliani_1994_2001 ;
+               :heldOffice :New_York_City ;
+               :memberOfParty :Republican ;
+               :residesIn :Brooklyn ;
+               :successor :Michael_Bloomberg ;
+               :annualBudgetUSD 39000000000 ;
+               :birthDate "1944-05-28T00:00:00"^^xsd:dateTime ;
+               :termCount "2"^^xsd:int .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Staten_Island
+:Staten_Island rdf:type owl:NamedIndividual ,
+                        :Borough .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#SubwaySafety
+:SubwaySafety rdf:type owl:NamedIndividual ,
+                       :Initiative .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Term_Adams_2022_2025
+:Term_Adams_2022_2025 rdf:type owl:NamedIndividual ,
+                               :Term ;
+                      :termOfCity :New_York_City ;
+                      :termEnd "2025-11-30T00:00:00"^^xsd:dateTime ;
+                      :termStart "2022-01-01T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Term_Bloomberg_2002_2013
+:Term_Bloomberg_2002_2013 rdf:type owl:NamedIndividual ,
+                                   :Term ;
+                          :termOfCity :New_York_City ;
+                          :termEnd "2013-12-31T00:00:00"^^xsd:dateTime ;
+                          :termStart "2002-01-01T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Term_DeBlasio_2014_2021
+:Term_DeBlasio_2014_2021 rdf:type owl:NamedIndividual ,
+                                  :Term ;
+                         :termOfCity :New_York_City ;
+                         :termEnd "2021-12-31T00:00:00"^^xsd:dateTime ;
+                         :termStart "2014-01-01T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#Term_Giuliani_1994_2001
+:Term_Giuliani_1994_2001 rdf:type owl:NamedIndividual ,
+                                  :Term ;
+                         :termOfCity :New_York_City ;
+                         :termEnd "2001-12-31T00:00:00"^^xsd:dateTime ;
+                         :termStart "1994-01-01T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/ibrah/ontologies/2025/10/nyc-mayors#UniversalPreK
+:UniversalPreK rdf:type owl:NamedIndividual ,
+                        :Initiative .
+
+
+###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
